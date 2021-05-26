@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#container{
+    -fx-alignment: CENTER;
+}
+#upField,#downField,#leftField,#rightField{
+    -fx-background-color: wheat;
+}

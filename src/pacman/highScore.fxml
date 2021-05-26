@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="pacman.HighScoreController" >
+    <Button text="Back" onAction="#cancelHandel"  ></Button>
+    <TableView fx:id="scoreTable" >
+        <columns>
+            <TableColumn text="Level" fx:id="levelNo"  ></TableColumn>
+            <TableColumn text="Score" fx:id="score"></TableColumn>
+            <TableColumn text="Date" fx:id="date"></TableColumn>  
+        </columns>
+    </TableView>
+    <stylesheets>
+        <URL value="@highscore.css"/>
+    </stylesheets>
+</VBox>

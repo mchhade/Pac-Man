@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane  xmlns:fx="http://javafx.com/fxml/1"  fx:id="container" alignment="CENTER"  fx:controller="pacman.SettingController">
+    
+        <Label text="Display Size " GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+        <ComboBox fx:id="comboBox" promptText="Select Size" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Sound" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+        <CheckBox fx:id="sound" textFill="#d75656" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <font>
+         <Font size="15.0" />
+      </font></CheckBox>
+      <Label text="UP" GridPane.columnIndex="0"   GridPane.rowIndex="2">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+      <Button GridPane.columnIndex="1" fx:id="upField" onAction="#handleOnClick"  onKeyPressed="#handleOnKeyPressed"  GridPane.rowIndex="2"  />
+      <Label text="DOWN" GridPane.columnIndex="0" GridPane.rowIndex="3">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+      <Button GridPane.columnIndex="1" fx:id="downField" onAction="#handleOnClick" onKeyPressed="#handleOnKeyPressed"   GridPane.rowIndex="3" />  
+      <Label text="LEFT" GridPane.columnIndex="0" GridPane.rowIndex="4">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+      <Button GridPane.columnIndex="1" fx:id="leftField" onAction="#handleOnClick" onKeyPressed="#handleOnKeyPressed"   GridPane.rowIndex="4" />  
+      <Label text="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="5">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+      <Button GridPane.columnIndex="1" fx:id="rightField" onAction="#handleOnClick" onKeyPressed="#handleOnKeyPressed"   GridPane.rowIndex="5" />    
+      <Button fx:id="applyButton" onAction="#applyHandle"  text="apply" GridPane.columnIndex="0" GridPane.rowIndex="6">
+          <font>
+              <Font size="20.0" />
+          </font>
+      </Button>
+      <Button fx:id="cancelButton" text="Cancel" onAction="#cancelHandel"  GridPane.columnIndex="1" GridPane.rowIndex="6">
+          <font>
+              <Font size="20.0" />
+          </font>
+      </Button>
+      <columnConstraints>
+          <ColumnConstraints />
+          <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+          <RowConstraints />
+          <RowConstraints />
+          <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      </rowConstraints>  
+</GridPane>

@@ -1,0 +1,17 @@
+#root{
+    -fx-alignment:CENTER;
+}
+#settingButton,#startGameButton,#hignScoreButton{
+    -fx-max-width:200px;
+    -fx-padding: 10 50 10 50;
+    -fx-margin: 10px 10px 10px 10px;
+    -fx-border-insets: 100px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-insets: 2px;
+    -fx-border-radius: 10px 20px 20px 20px;
+}
+#settingButton:focus,#startGameButton:focus,#hignScoreButton:focus{
+    -fx-background-color: grey;
+    -fx-text-fill: black;
+}
